@@ -1,0 +1,4 @@
+for: es un comando que usamos para repetir una cierta cantidad de veces una determinada instrucción. Se usa cuando sabemos cuantas veces se va a repetir esa instrucción.
+&&= es un operador lógico significa Y (and), que nos da un resultado booleano verdadero sólo cuando ambas expresiones son verdaderas. Cuando una de las expresiones sea falsa entonces el código no se ejecutará.
+||= es un operador lógico significa O (or), que nos da un resultado booleano verdadero cuando ambas expresiones sean erdaderas o bien una de ellas lo sea. Si ambas son falsas el resultado es falso y el código no se ejecutará.
+!= es un operador lógico significa No (not), que nos da un resultao booleano opuesto a la expresión. 
