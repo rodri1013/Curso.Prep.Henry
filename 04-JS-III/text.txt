@@ -1,1 +1,1 @@
-arrays: es un conjunto de datos que ocupan una detrminada posición. Esos datos pueden ser numéricos, booleanos, strings, otros arrays, funciones. Los arrays se definen entre brackets []. Se pueden hacer diversas operaciones, funciones con los arrays.
+arrays: es un conjunto de datos que ocupan una detrminada posición. Esos datos pueden ser numéricos, booleanos, strings, otros arrays, funciones. Los arrays se definen entre brackets []. Se pueden hacer diversas operaciones, funciones con los arrays. Nos permite trabajar con muhos datos.
