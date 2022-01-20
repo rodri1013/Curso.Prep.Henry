@@ -1,0 +1,5 @@
+Objetos: son un conjunto de propiedades. Estas propiedades toman distintos valores, y pueden ser de distinto tipo de daos.
+Propiedades: son atributos que tienen los objetos, y a su vez esos atributos tienen valores. 
+Métodos: es una función que se encuentra dentro de un objeto.
+Bucle for...in: Es una estructura de control para objetos que sirve para recuperar propiedades y valores.
+Notación de puntos vs Notación de corchetes: La DOT notation es literal, sirve para invocar una propiedad de un objeto, es más fácil y rápido. La bracket notation sirve más para recorrer un objeto y trabajar con variables.
