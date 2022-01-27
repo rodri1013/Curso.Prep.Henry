@@ -1,0 +1,2 @@
+Prototype: permite acceder a métodos de clases de distintos objetos afin de poder acceder, hacer modifcaciones desde un solo lugar para noescribir código en forma redundante.
+Constructors (de clase): En JS se crean muchos objetos y muchas veces éstos comparten propiedades. A través de los constructores se pueden compartir algunas propiedades  y métodos sin necesidad de hacer modifcaciones en cada objeto.
