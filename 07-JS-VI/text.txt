@@ -1,0 +1,1 @@
+Callbacks:  se pueden pasar funciones como argumentos a otras funciones.
