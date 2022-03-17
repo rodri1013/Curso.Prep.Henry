@@ -28,7 +28,8 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  return str;
+  return str; //var resultado = x + y;
+              // return resultado; 
 }
 
 function suma(x, y) {
@@ -74,7 +75,11 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num < 90) {return true;} else {return false;} 
+  if (num < 90) {
+    return true;
+  } else {
+    return false;
+  } 
 }
 
 function mayorQueCincuenta(num) {
@@ -197,7 +202,7 @@ return (base * altura)/2;
 
 
 function deEuroAdolar(euro){
-  //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
+  //Supongamos que  1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
 return euro * 1.2;  
