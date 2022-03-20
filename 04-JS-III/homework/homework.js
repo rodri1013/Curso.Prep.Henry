@@ -99,7 +99,13 @@ function promedioResultadosTest(resultadosTest) {
   return agregarNumeros (resultadosTest) / resultadosTest.length;
 }
 
-
+/* {
+var sumaTotal = resultadosTest.reduce ((a,b)=>{
+  return a + b
+})
+var largo = resultadosTest.length
+return (sumaTotal/largo)
+} */
 
 function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
