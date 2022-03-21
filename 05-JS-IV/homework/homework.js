@@ -27,6 +27,7 @@ function agregarPropiedad(objeto, property) {
 
 }
 
+
 function invocarMetodo(objeto, metodo) {
   // "metodo" es una cadena que contiene el nombre de un método (funcion) en el objeto
   // Invoca ese método
@@ -100,6 +101,13 @@ function verificarPassword(usuario, password) {
   return usuario.password === password; 
 }
 
+/* {
+  if(usuario.password === password){
+    return true;
+  }
+    return false;
+} */
+
 function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
@@ -163,6 +171,15 @@ function agregarMetodoCalculoDescuento(producto) {
 };
 return producto;
 }
+
+/* {
+  producto.calcularPrecioDescuento = function() {
+    var descuento = producto.precio - (producto.precio * porcentajeDeDescuento);
+    return descuento;
+  }
+  return producto;
+} */
+
 
 // No modificar nada debajo de esta línea
 // --------------------------------
