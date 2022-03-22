@@ -6,6 +6,10 @@ function mayuscula(nombre) {
   //Tu código:
   return nombre[0].toUpperCase() + nombre.slice(1);
 }
+/* 
+{
+  return.charAt(0).toUpperCase() + no.slice(1);
+} */
 
 function invocarCallback(cb) {
   // Invoca al callback `cb`
@@ -40,7 +44,12 @@ function forEach(array, cb) {
   }
 
 }
-
+/* 
+{
+  array.forEach(function(el){
+    cb(el)
+},0);
+} */
 function map(array, cb) {
   // Crea un nuevo array
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
@@ -51,6 +60,14 @@ function map(array, cb) {
   });
   return nuevoArray;
 }
+/* 
+{
+var nuevoArray = [];
+for (let i = 0; i < array.length; i++) {
+   nuevoArray.push(cb(array[i]));
+}
+return nuevoArray;
+} */
 
 function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
@@ -64,6 +81,13 @@ function filter(array) {
   }
   return nuevoArray;
 }
+
+/* {
+  var coincidencias = array.filter(function(el){
+    return el[0] === 'a' 
+  })
+  return coincidencias;
+} */
 
 // No modificar nada debajo de esta línea
 // --------------------------------
