@@ -13,7 +13,17 @@ function deObjetoAmatriz(objeto){
    var obj= Object.entries(objeto);
    return obj;
 }
-
+/* 
+{
+  var nuevAarray = [];
+  for(key in objeto){
+    nuevoArray.push[(key, objeto[key]])
+  }
+  return nuevAarray;
+} */
+/* {
+  return Object.entries(objeto);
+} */
 
 function numberOfCharacters(string) {
   //La función recibe un string. Recorre el srting y devuelve el caracter con el número de veces que aparece 
@@ -65,6 +75,13 @@ function asAmirror(str) {
   return rta.join(' ');
 } 
 
+/* {
+  var cambios = str.split(' ').map(function(el){
+    return el.split('').reverse().join('');
+  })
+return cambios.join(' ');
+} */
+
 
 function capicua(numero){
   //Escribe una función, la cual recibe un número y determina si es o no capicúa.
@@ -81,8 +98,17 @@ function capicua(numero){
     return "No es capicua";
   }
 }
+/* {
+let cadena = numero.toString();
+let cadenaInver = '';
 
-
+cadenaInver = cadena.split('').reverse().join('');
+  if (cadena===cadenaInver){
+  return "Es capicua";
+}
+  return "No es capicua";
+}
+ */
 
 function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
@@ -101,6 +127,16 @@ return sinABC;
 }
 
 
+/* {
+  let rsp = '';
+for (i=0; i<cadena.length; i++){
+  if(cadena[i] !== 'a' && cadena[i] !== 'b' && cadena[i] !== 'c'){
+    rsp += cadena [i];
+  }
+}
+return rsp;
+} */
+ 
 function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
@@ -117,6 +153,25 @@ function sortArray(arr) {
   return arr;
 }
 
+/* {
+  return arr.sort((a,b)=>a.length-b.length)
+} */
+
+/* {
+var cambio = true;
+while(cambio){
+  cambio = false;
+  for (var i = 0; i < arr.length-1; i++){
+    if(arr[i].length > arr[i+1].length){
+      var aux = arr[i];
+      arr[i] = arr[i+1];
+      arr[i+1] = aux;
+      cambio = true;
+    }
+  }
+}
+return arr;
+} */
 
 function buscoInterseccion(arreglo1, arreglo2){
   //Existen dos arrays, cada uno con 5 números. A partir de ello, escribir una función que permita 
@@ -135,8 +190,7 @@ function buscoInterseccion(arreglo1, arreglo2){
   return int;
 }
 
-
-
+ 
 // No modificar nada debajo de esta línea
 // --------------------------------
 
