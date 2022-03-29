@@ -120,8 +120,36 @@ function numeroMasGrande(numeros) {
 return maximo;
 }
 
+/*var nuevoArray = [];
+var min = numeros[0];
+var max = numeros[0];
+for (let i = 1; i < numeros.length; i++) {
+ if(numeros[i] < min){
+   min = numeros[i];
+    nuevoArray.push (numeros[i]);
+  if(numeros[i] > max){
+      max = numeros[i];
+       nuevoArray.push (numeros[i]);
+  }
+ }
+}
 
-function multiplicarArgumentos() {
+return nuevoArray;
+} 
+
+var nuevoArray = [];
+if (Math.min.apply(null, numeros)) {
+ nuevoArray.push (numeros[1]);
+};
+if (Math.max.apply(null, numeros)){
+  nuevoArray.push (numeros[0]);
+}
+return nuevoArray;
+
+}
+*/
+
+ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
@@ -131,7 +159,7 @@ function multiplicarArgumentos() {
 total = total * arguments [i];
   }
   return total;
-}
+} 
 
 /* if(arguments.length === 0) {
   return 0;
