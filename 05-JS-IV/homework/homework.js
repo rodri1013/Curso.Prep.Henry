@@ -92,7 +92,12 @@ function tienePropiedad(objeto, propiedad) {
   }
 }
 
-
+/*
+if(objeto.hasOwnProperty(propiedad)){
+  return true;
+}
+  return false;
+*/
 function verificarPassword(usuario, password) {
   // Comprueba si la "password" enviada coincide con la propiedad "password" del objeto "usuario"
   // Devuelve "true" si coinciden
@@ -106,7 +111,9 @@ function verificarPassword(usuario, password) {
     return true;
   }
     return false;
-} */
+} 
+usuario["password"]
+*/
 
 function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
@@ -115,6 +122,7 @@ function actualizarPassword(usuario, nuevaPassword) {
   usuario.password = nuevaPassword;
   return usuario;
 }
+
 
 function agregarAmigo(usuario, nuevoAmigo) {
   // "usuario" tiene una propiedad llamada "amigos" que es un array
@@ -200,3 +208,4 @@ module.exports = {
   sumarLikesDeUsuario,
   agregarMetodoCalculoDescuento
 };
+
