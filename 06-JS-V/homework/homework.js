@@ -50,7 +50,17 @@ function agregarStringInvertida() {
 /* {
   String.prototype.reverse = function () {
     return this.split("").reverse().join("");
-} */
+} 
+
+String.prototype.reverse = function{
+  var letras = '';
+  for(var i = this.length - 1; i >= 0; i --){
+    letras = letras + this[i];
+  }
+  return letras;
+}
+
+*/
 
 // ---------------------------------------------------------------------------//
   //Crea el constructor de la clase "Persona"
@@ -81,7 +91,25 @@ function agregarStringInvertida() {
       }
     }
 }
+ 
+/*
+this.nombre = nombre,
+      this.apellido = apellido,
+      this.edad = edad,
+      this.domicilio= domicilio
+}
+    detalle() {
+        return {
+          Nombre: this.nombre,
+          Apellido: this.apellido,
+          Edad: this.edad,
+          Domicilio: this.domicilio
+        }
+      }
+    }
 
+
+ */
 
 function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
